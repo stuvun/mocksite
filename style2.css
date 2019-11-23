@@ -2,31 +2,37 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("images/mock\ site\ final.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
     overflow-x: hidden;
     box-sizing: border-box;
+    padding: 10px 50px 100px 100px;
 }
 
 header {
-    margin: 1% 0 0 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    width: 2.3vw;
+    background-image: url("./images/mock\ logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 3px;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
-    margin: -4% 0 0 40%;
-    width: auto;
+    width: 50vw;
 }
 
-.logo {
-    width: 3%;
-}
 
 li {
     list-style: none;
@@ -38,11 +44,37 @@ a {
     font-size: 1.5vw;
 }
 
-.buy1 {
+.about {
+    font-weight: bold;
+    color: black;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.buyLeft, .buyRight {
     color: rgb(234, 94, 76);
-    border: 5px solid rgb(234, 94, 76);
-    border-radius: 3vh;
-    padding: 1.75% 3% 1.75% 2%;
+    border-top: 2px solid rgb(234, 94, 76);
+    border-bottom: 2px solid rgb(234, 94, 76);
+    font-weight: bold;
+}
+
+.buyLeft {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: 2px solid rgb(234, 94, 76);
+    border-right: 0.5px solid rgb(234, 94, 76);
+    padding: 6px 16px 6px 16px;
+}
+
+.buyRight {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: 2px solid rgb(234, 94, 76);
+    padding-left: 3px;
+    padding: 6px 16px 6px 16px;
 }
 
 .wrapper1 {
