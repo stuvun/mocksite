@@ -68,35 +68,30 @@ a {
     font-weight: bold;
 }
 
-.buyLeft.first {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.buyLeft.first, .buyLeft.second {
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
     border-left: 2px solid rgb(234, 94, 76);
     border-right: 0.5px solid rgb(234, 94, 76);
-    padding: 6px 16px 6px 16px;
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
 }
 
-.buyRight.first {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+.buyRight.first, .buyRight.second {
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
     border-right: 2px solid rgb(234, 94, 76);
     padding-left: 3px;
-    padding: 6px 16px 6px 16px;
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
 }
 
 .buyLeft.second{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     border-left: 2px solid black;
     border-right: 0.5px solid black;
     padding: 8px 16px 10px 16px;
 }
 
 .buyRight.second {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     border-right: 2px solid black;
-    padding-left: 3px;
     padding: 8px 16px 10px 16px;
 }
 
@@ -144,6 +139,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    line-height: 100%;
     margin-top: 4vw;
 }
 
